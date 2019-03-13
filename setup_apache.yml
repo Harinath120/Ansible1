@@ -1,0 +1,14 @@
+---
+- hosts: ubuntu18
+  become: yes
+  tasks:
+  - name: install webserver on ubuntu(apache2)
+    apt:
+     name: apache2
+     state: present
+  - name: start apache2 service
+    service:
+      name: apache2
+      state: started
+      
+    
