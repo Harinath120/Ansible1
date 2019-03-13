@@ -11,4 +11,4 @@
     service:
       name: httpd
       state: started
-    
+    sudo: yes
